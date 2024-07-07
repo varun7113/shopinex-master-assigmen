@@ -1,0 +1,470 @@
+App.css
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #dce4e6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+  justify-content: space-around;
+}
+
+.card {
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  background: whitesmoke;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #20465f;
+  
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  .card {
+    width: calc(100% - 40px); /* Full width with 20px margin on each side */
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* App.css */
+
+/* ... (existing styles) */
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.next-button {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin: 20px;
+}
+
+.next-button:hover {
+  background-color: #2980b9;
+}
+
+
+.btn-next{
+  margin-top: 20px;
+  margin-right: 50px;
+  text-align: end;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  .card {
+    width: calc(100% - 40px);
+    margin: 10px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+/* Add this CSS in your styles file or component */
+
+.wrapper {
+  display: flex;
+}
+
+.form-wrapper {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-wrapper h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+.inputs {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  
+  .image-wrapper {
+    order: -1;
+  }
+}
+
+
+.formdiv{
+  display: flex;
+  margin: 50px;
+  padding: 50px;
+}
+
+
+.label{
+ font-weight: 500;
+ width: 500px;
+ border-radius: 10px;
+ margin-top: 20px;
+}
+
+.inputs{
+  margin-top: 5px;
+  border-radius: 5px;
+  height: 50px;
+  border:ghostwhite;
+}
+
+.heading{
+  height: 100px;
+  font-size: 100px;
+}
+
+.form-btns{
+  display: flex;
+  align-items: end;
+  margin-left:270px;
+
+}
+
+.form-btn{
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin: 20px;
+}
+.form-btn-back{
+  
+    background-color: #bec4c4;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin: 20px;
+  
+}
+
+.textarea{
+margin-top: 10px;
+}
+
+.input-code{
+  margin-top: 5px;
+  border-radius: 5px;
+  height: 30px;
+  padding: 10px;
+  border:ghostwhite;
+  font-weight: 500;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.check{
+  margin-top: 20px;
+}
+
+
+
+
+.formdiv-1{
+  display: flex;
+  
+}
+
+.scroll-form{
+  flex: 1;
+  padding: 100px;
+  height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.product-img{
+  flex: 1;
+  padding: 50px;
+}
+.price{
+  display: flex;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+.inputs-price{
+  width: 250px;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border:ghostwhite;
+  font-weight: 500;
+}
+
+.main-heading{
+  margin-left: 20px;
+}
+
+.btn-apply{
+  color: #2980b9;
+  background-color: white;
+  border-color: #2980b9;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80px;
+}
+
+.btn-apply.applied {
+  background-color: white; /* Red */
+  color: rgb(47, 255, 57);
+  border-color:  rgb(47, 255, 57);
+}
+
+
+
+/* App.css */
+
+/* ... (existing styles) */
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: calc(100% - 40px);
+    margin: 10px;
+  }
+
+  .card-container {
+    margin: 10px;
+  }
+
+  .btn-next {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .formdiv {
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .label {
+    width: 100%;
+  }
+
+  .form-btns {
+    margin-left: 0;
+  }
+
+  .form-btn,
+  .form-btn-back {
+    width: 100%;
+  }
+
+  .form-wrapper {
+    padding: 10px;
+  }
+
+  .image-wrapper {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .label {
+    width: 100%;
+  }
+
+  .inputs {
+    width: 100%;
+  }
+
+  .form-btns {
+    margin-left: 0;
+  }
+
+  .form-btn,
+  .form-btn-back {
+    width: 100%;
+  }
+}
+
+/* Add this CSS in your existing styles file or component */
+
+/* ... (existing styles) */
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .image-wrapper {
+    order: -1;
+  }
+  .product-img{
+    order: -1;
+  }
+}
+
+
+/* Add these media queries to your existing styles */
+
+/* For tablets */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .scroll-form {
+    padding: 20px;
+  }
+
+  .price {
+    flex-direction: column;
+  }
+
+  .label {
+    width: 100%;
+  }
+
+  .inputs,
+  .inputs-price,
+  .textarea,
+  .input-code {
+    width: 100%;
+  }
+
+  .form-btns {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .form-btn,
+  .form-btn-back {
+    width: 100%;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 600px) {
+  .scroll-form {
+    padding: 10px;
+  }
+
+  .label {
+    width: 100%;
+  }
+
+  .inputs,
+  .inputs-price,
+  .textarea,
+  .input-code {
+    width: 100%;
+  }
+
+  .form-btns {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .form-btn,
+  .form-btn-back {
+    width: 100%;
+  }
+
+  .price {
+    flex-direction: column;
+  }
+}
